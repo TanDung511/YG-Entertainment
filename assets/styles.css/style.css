@@ -1,0 +1,257 @@
+* {
+    /* reset css */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#nav {
+    display: inline-flex;
+}
+
+#nav, .subnav {
+    list-style: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    padding: 14.5px 22px;
+    font-size: 15px;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover  {
+    background-color: #ccc;
+    color: #000; 
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px gray;
+    font-size: x-small;
+}
+
+#nav .subnav  a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#header .search-button {
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+    
+}
+
+#header .search-button:hover {
+    background-color: red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-button .search-icon {
+
+}
+
+.logo-YG {
+    margin: 46px;
+    height: 200px;
+    background: url('/Assignment/assets/img/YG_Logo.jpg') top center no-repeat;
+    background-size: 200px;
+}
+
+#slider {
+    height: 1500px; 
+    position: relative;
+}
+
+.image {
+    box-shadow: 0 0 10px gray;
+    width: 725px;
+    position: absolute;
+    left: 30px;
+}
+
+.bigbang-area {
+    width: 100%;
+    height: 470px;
+    position: absolute;
+    top: 0;
+}
+
+.image .big-bang {
+    position: absolute;
+    max-width: 49%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-bigbang , .text-iKON  {
+    max-width: 49%;
+    height: 400px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+
+.text-heading {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    color: #0063ec;
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.text-content {
+    position: absolute;
+    font-size: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.name-members {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    list-style: none;
+    line-height: 45px;
+    font-size: 25px;
+    text-shadow: 0 0 10px gray;
+}
+
+.blackpink-area{
+    width: 100%;
+    height: 470px;
+    position: absolute;
+    top: 485px;
+
+}
+
+.image-right {
+    width: 725px;
+    position: absolute;
+    right: 30px;
+    box-shadow: 0 0 10px gray;
+}
+
+.image .black-pink {
+    position: absolute;
+    max-width: 49%;
+    right: 20px;
+}
+
+.text-blackpink {
+    max-width: 49%;
+    height: 470px;
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.text-heading1 {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    color: #0063ec;
+    opacity: 0.7;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.iKON-area {
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 965px;
+}
+
+.image .iKON {
+    position: absolute;
+    max-width: 49%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 600px;
+}
+
+.text-content {
+    position: absolute;
+    top: 100px;
+    font-size: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#footer {
+    height: 220px;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+.icon {
+    display: inline-flex;
+    padding: 30px;
+    margin: 10px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.icon>i{
+    margin: 5px;
+    transition: 0.8s;
+    position: relative;
+    top: 0px;
+}
+
+.icon>i:hover {
+    color: red;
+    font-size: 40px;
+    top: -5px;
+}

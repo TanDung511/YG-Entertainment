@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    height: 2000px;
+}
+
+#header {
+    height: 46px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav {
+    display: inline-flex;
+}
+
+#nav, .subnav {
+    list-style: none;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav>li>a {
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    padding: 14.5px 22px;
+    font-size: 15px;
+}
+
+#nav>li:hover>a,
+#nav .subnav li:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav .subnav {
+    display: none;
+    min-width: 160px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px gray;
+    font-size: x-small;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#header .search-button {
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 21px;
+
+}
+
+#header .search-button:hover {
+    background-color: red;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-button .search-icon {
+    font-size: 14px;
+}
+
+.logo-YG {
+    margin: 46px;
+    height: 200px;
+    background: url('/Assignment/assets/img/YG_Logo.jpg') top center no-repeat;
+    background-size: 200px;
+}
+
+#slider {
+    height: auto;
+}
+
+.container > h1 , h2 {
+    text-align: center;
+    color: #0063ec;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.container > h1 {
+    margin-top: 100px;
+}
+
+.container {
+    height: 3500px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.bigbang-area {
+    margin-top: 5px;
+    right: 150px;
+    left: 150px;
+    top: 0;
+    height: 800px;
+}
+
+.image-bigbang {
+    background-image: url('../img/bigbang.jpg');
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.text-content {
+    text-align: justify;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+}
+
+.members {
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    height: 200px;
+}
+
+.members > img {
+    height: 200px;
+    width: 140px;
+    background-size: cover;
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.members >img:hover {
+    border: 0.5px solid orangered;
+    transition: 0.5s;
+    
+}
+
+.blackpink-area, .iKON-area {
+    margin-top: 5px;
+    right: 150px;
+    left: 150px;
+    margin-top: 5px;
+    height: 800px;
+}
+
+.image-blackpink {
+    background-image: url('../img/blackpinkavt.jpg');
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image-iKON {
+    background-image: url('../img/iKONm.jpg');
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#footer {
+    height: 220px;
+    background-color: #000;
+    color: #fff;
+    position: relative;
+}
+
+.icon {
+    display: inline-flex;
+    padding: 30px;
+    margin: 10px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.icon>i {
+    margin: 5px;
+    transition: 0.8s;
+    position: relative;
+    top: 0px;
+}
+
+.icon>i:hover {
+    color: red;
+    font-size: 40px;
+    top: -5px;
+}
